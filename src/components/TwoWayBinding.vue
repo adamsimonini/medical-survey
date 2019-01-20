@@ -31,12 +31,6 @@ export default {
         }
   },
   methods: {
-        logThisInstead: function(){
-            console.log("%c Form submission was successfully prevented, and THIS function was run, instead! :)", "color: limegreen;" );
-        },
-        logMe: function(){
-            console.log(this);
-        },
     }
 }
 </script>

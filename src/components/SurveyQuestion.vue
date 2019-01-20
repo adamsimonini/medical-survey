@@ -1,7 +1,7 @@
 <template>
     <div class='surveySection'>
         <h2 class="sectionTitle" @click="showContent()">{{title}}</h2>
-        <div v-show="(toggler) % 2 == 0">
+        <div v-show="1==1">
             <slot name="content"></slot>
         </div>
     </div>
@@ -13,7 +13,7 @@ export default {
   props: ['title'],
   data: function() {
       return {
-          toggler: 1,
+          toggler: 2,
       }
   },
   methods: {

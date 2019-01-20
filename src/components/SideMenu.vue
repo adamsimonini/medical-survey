@@ -25,6 +25,7 @@ export default {
                         {icon: 'home', title: 'Home'},
                         {icon: 'walking', title: 'Capability'},
                         {icon: 'fire', title: 'Pain'},
+                        {icon: 'bone', title: 'Stiffness'},
                         {icon: 'bed', title: 'Fatigue'},
                         {icon: 'smile', title: 'Mood'},
                     ],
@@ -48,7 +49,7 @@ export default {
 }
 .fas{
     color: var(--primaryColor);
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .menuItem{
     text-align: center;
@@ -56,7 +57,7 @@ export default {
 }
 .menuItem:hover{
     background-color: var(--primaryColor);
-    color: white;
+    color: white !important;
     cursor: pointer;
 }
 .menuTitle{
