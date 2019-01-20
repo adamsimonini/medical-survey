@@ -13,6 +13,10 @@ h2 { font-size: 1.5em; }
 h3 { font-size: 1.44em; }
 h4 { font-size: 1.2em; }
 
+.surveySection{
+    font-size: 1.2rem;
+}
+
 #app{
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
@@ -120,7 +124,7 @@ button:nth-child(odd){
     cursor: pointer;
 }
 .contentBox{
-    margin-left: 5%;
+
 }
 .contentBox img{
     max-width: 100%;

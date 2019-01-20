@@ -3,10 +3,11 @@
     <SideMenu />
     <div>
       <h1>RheumInfo Patient Wellbeing Form</h1>
-      <SurveyQuestion class="SurveyQuestion" title="Home">
+      <SurveyQuestion class="" title="Home">
         <Home slot="content"/>
       </SurveyQuestion>
-      <SurveyQuestion class="SurveyQuestion" title="Current Capabilities">
+      <SurveyQuestion class="" title="Current Capabilities">
+        <Capabilities slot="content"/>
       </SurveyQuestion>
       <!-- <SurveyQuestion class="SurveyQuestion" title="Event Propagation">
       
@@ -14,13 +15,13 @@
       <SurveyQuestion class="SurveyQuestion" title="Key & Mouse Modifiers">
       
       </SurveyQuestion> -->
-      <SurveyQuestion class="SurveyQuestion" title="Pain in the Past Week">
+      <SurveyQuestion class="" title="Pain in the Past Week">
       </SurveyQuestion>
-      <SurveyQuestion class="SurveyQuestion" title="Morning Stiffness">
+      <SurveyQuestion class="" title="Morning Stiffness">
       </SurveyQuestion>
-      <SurveyQuestion class="SurveyQuestion" title="Fatigue">
+      <SurveyQuestion class="" title="Fatigue">
       </SurveyQuestion>
-      <SurveyQuestion class="SurveyQuestion" title="Mood Comparison">
+      <SurveyQuestion class="" title="Mood Comparison">
       </SurveyQuestion>
       <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     </div>
@@ -31,16 +32,18 @@
 import SideMenu from './SideMenu.vue';
 import SurveyQuestion from './SurveyQuestion.vue';
 import Home from './Home.vue';
+import Capabilities from './Capabilities.vue';
 
 export default {
   name: 'Main',
   components: {
     SideMenu,
     SurveyQuestion,
+    Home,
+    Capabilities,
   },  
   data: function(){
     return {
-      modifierChart: '../assets/vue-modifiers.jpg',
     }
   },
 }
@@ -56,7 +59,7 @@ export default {
   border-radius: 10px;
   padding: 2% 0;
   margin: 2% 0;
-  max-height: 90vh;
+  /* max-height: 90vh; */
   -webkit-box-shadow: 10px 10px 51px -14px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 51px -14px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 51px -14px rgba(0,0,0,0.75);
@@ -64,5 +67,8 @@ export default {
 
 h1{
   color: var(--primaryColor);
+}
+h2{
+  font-size: 3rem;
 }
 </style>

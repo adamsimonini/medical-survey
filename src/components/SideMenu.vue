@@ -22,7 +22,7 @@ export default {
             return {
                 menuList:
                     [
-                        {icon: 'home', title: 'Home'},
+                        {icon: 'home', title: 'Home', show: true},
                         {icon: 'walking', title: 'Capability'},
                         {icon: 'fire', title: 'Pain'},
                         {icon: 'bone', title: 'Stiffness'},

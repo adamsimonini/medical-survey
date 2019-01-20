@@ -1,9 +1,7 @@
 <template>
     <div class='surveySection'>
         <h2 class="sectionTitle" @click="showContent()">{{title}}</h2>
-        <div v-show="1==1">
-            <slot name="content"></slot>
-        </div>
+        <slot name="content"></slot>
     </div>
 </template>
 
@@ -34,12 +32,13 @@ export default {
   font-weight: 900;
 }
 
-.surveySection section{
-    margin-left: 5%;
+.surveySection {
+    margin: 0 5%;
 }
 .sectionTitle{
     cursor: pointer;
     user-select: none;
+    font-size: 2rem;
 }
 .sectionTitle:hover{
     cursor: pointer;

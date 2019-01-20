@@ -23,5 +23,4 @@ export default {
     color: purple;
 } */
 
-
 </style>
