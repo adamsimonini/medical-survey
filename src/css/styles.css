@@ -1,0 +1,127 @@
+/* CSS VARIABLES */
+:root {
+    --primaryColor: #988ABF;
+    --secondaryColor: #F4CFBD;
+    --black: #34343B;
+
+}
+
+/* SIZING */
+html { font-size: 1em; }
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.44em; }
+h4 { font-size: 1.2em; }
+
+#app{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    min-height: 100vh;
+}
+@media only screen and (max-width: 1400px) {
+    #app {
+        grid-template-columns: 0px 1fr 0px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: [row] 10% [row] 1fr;
+        grid-gap: 10px;
+        /* border: 2px solid var(--primaryColor);
+        border-radius: 10px;
+        padding: 5% 0;
+        margin: 5% 0;
+        max-height: 100vh;
+        -webkit-box-shadow: 10px 10px 51px -14px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 51px -14px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 51px -14px rgba(0,0,0,0.75); */
+    }
+    .menuTitle {
+        display: none;
+    }
+}
+.guideSection h2{
+    background-color: #f9f9f9;    
+}
+.guideSection h2{
+    border-bottom: 1px solid grey;  
+}
+button{
+    text-align: center;
+    border: 2px solid purple;
+    background-color: white;
+    padding: 20px;;
+    border-radius: 10px;
+}
+button:hover{
+    cursor: pointer;
+    border: 2px solid skyblue;
+}
+button:focus{
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid skyblue;
+    outline:0;
+}
+button:nth-child(odd){
+
+}
+.doubleBlue{
+    color: blue;
+    border: 1px solid blue;
+}
+.pinkBox{
+    width: 200px;
+    height: 200px;
+    background: pink;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.width-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.pain-areas input{
+    color: red;
+}
+.subtitle{
+    font-weight: 900;
+    font-size: 16px;
+}
+.parentFirst{
+    color: skyblue;
+}
+.childFirst{
+    color: pink;
+}
+.mouse-button{
+    padding: 10px;
+    border: 1px solid blue;
+    max-width: 50%;
+}
+[v-clock]{
+    display: none;
+}
+.toggle-button{
+    background-color: white;
+    color: darkblue;
+    padding: 1%;
+    font-weight: 900;
+}
+.toggle-button:hover{
+    cursor: pointer;
+}
+.contentBox{
+    margin-left: 5%;
+}
+.contentBox img{
+    max-width: 100%;
+}

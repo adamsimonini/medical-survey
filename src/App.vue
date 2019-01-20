@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <section class='gutter'></section>
     <Main />
+    <section class='gutter'></section>
   </div>
 </template>
 
@@ -9,20 +10,12 @@
 import Main from './components/Main.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    Main
-  }
+    Main,
+  },
 }
+
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="./css/styles.css"></style>

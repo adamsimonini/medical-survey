@@ -1,36 +1,64 @@
 <template>
-  <div class="main">
-    <Form>
-      <Contact />
-    </Form>
-  </div>
+  <main id='main'>
+    <SideMenu />
+    <div>
+      <h1>RheumInfo Patient Wellbeing Form</h1>
+      <SurveyQuestion class="SurveyQuestion" title="Current Capabilities">
+      </SurveyQuestion>
+      <!-- <SurveyQuestion class="SurveyQuestion" title="Event Propagation">
+      
+      </SurveyQuestion>
+      <SurveyQuestion class="SurveyQuestion" title="Key & Mouse Modifiers">
+      
+      </SurveyQuestion> -->
+      <SurveyQuestion class="SurveyQuestion" title="Pain in the Past Week">
+      </SurveyQuestion>
+      <SurveyQuestion class="SurveyQuestion" title="Morning Stiffness">
+      </SurveyQuestion>
+      <SurveyQuestion class="SurveyQuestion" title="Fatigue">
+      </SurveyQuestion>
+      <SurveyQuestion class="SurveyQuestion" title="Mood Comparison">
+      </SurveyQuestion>
+      <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    </div>
+  </main>
 </template>
 
 <script>
-import Contact from './Contact.vue'
+import SideMenu from './SideMenu.vue';
+import SurveyQuestion from './SurveyQuestion.vue';
 
 export default {
   name: 'Main',
   components: {
-    Contact
-  }
+    SideMenu,
+    SurveyQuestion,
+  },  
+  data: function(){
+    return {
+      modifierChart: '../assets/vue-modifiers.jpg',
+    }
+  },
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+#main{
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  border: 2px solid var(--primaryColor);
+  border-radius: 10px;
+  padding: 5% 0;
+  margin: 5% 0;
+  max-height: 100vh;
+  -webkit-box-shadow: 10px 10px 51px -14px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 51px -14px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 51px -14px rgba(0,0,0,0.75);
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+
+h1{
+  color: var(--primaryColor);
 }
 </style>
