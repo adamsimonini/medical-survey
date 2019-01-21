@@ -16,12 +16,16 @@
       
       </SurveyQuestion> -->
       <SurveyQuestion class="" title="Pain in the Past Week">
+        <Pain slot="content"/>
       </SurveyQuestion>
       <SurveyQuestion class="" title="Morning Stiffness">
+        <Stiffness slot='content' />
       </SurveyQuestion>
       <SurveyQuestion class="" title="Fatigue">
+        <Fatigue slot="content"/>
       </SurveyQuestion>
       <SurveyQuestion class="" title="Mood Comparison">
+        <Mood slot="content"/>
       </SurveyQuestion>
       <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     </div>
@@ -33,6 +37,10 @@ import SideMenu from './SideMenu.vue';
 import SurveyQuestion from './SurveyQuestion.vue';
 import Home from './Home.vue';
 import Capabilities from './Capabilities.vue';
+import Pain from './Pain.vue';
+import Fatigue from './Fatigue.vue';
+import Mood from './Mood.vue';
+import Stiffness from './Stiffness.vue';
 
 export default {
   name: 'Main',
@@ -41,6 +49,10 @@ export default {
     SurveyQuestion,
     Home,
     Capabilities,
+    Pain,
+    Fatigue,
+    Mood,
+    Stiffness,
   },  
   data: function(){
     return {
@@ -52,7 +64,7 @@ export default {
 <style scoped>
 #main{
   display: grid;
-  grid-template-columns: 10% 1fr;
+  grid-template-columns: 15% 1fr;
   grid-template-rows: auto;
   grid-gap: 10px;
   border: 2px solid var(--primaryColor);

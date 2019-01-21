@@ -1,23 +1,23 @@
 <template>
     <div id="" class="capability-question">
-        <h3>{{questions}}</h3>
+        <h3><span>{{index}}. </span>{{questions}}</h3>
         <div class="answersBox">
-            <div class="radioButton">            
-                <input type="radio" value="Not difficult" v-model="difficulty">
-                <label for="Not difficult">No difficulty</label>
-            </div>
-            <div class="radioButton">            
-                <input type="radio" value="A little difficult" v-model="difficulty">
-                <label for="A little difficult">Low difficulty</label>
-            </div>
-            <div class="radioButton">            
-                <input type="radio" value="Very difficult" v-model="difficulty">
-                <label for="Very difficult">High difficulty</label>
-            </div>
-            <div class="radioButton">            
-                <input type="radio" value="Cannot Perform" v-model="difficulty">
-                <label for="Cannot Perform">Cannot Perform</label>
-            </div>
+            <label class="radioLabel" for="Not difficult">
+                <input type="radio" value="0" v-model="difficulty" />No difficulty
+                <!-- <span class="customRadio"></span> -->
+            </label>
+            <label class="radioLabel" for="A little difficult">
+                <input type="radio" value="1" v-model="difficulty" />Low difficulty
+                <!-- <span class="customRadio"></span> -->
+            </label>
+            <label class="radioLabel" for="Very difficult">
+                <input type="radio" value="2" v-model="difficulty" />High difficulty
+                <!-- <span class="customRadio"></span> -->
+            </label>
+            <label class="radioLabel" for="Cannot Perform">
+                <input type="radio" value="3" v-model="difficulty" />Cannot Perform
+                <!-- <span class="customRadio"></span> -->
+            </label>
         </div>
         <br />
             <!-- <span>Picked: {{ difficulty }}</span> -->
@@ -28,13 +28,14 @@
 
 export default {
     name: 'CapabilityQuestion',
-    props: ['questions'],
+    props: ['questions', 'index'],
     data: function() {
          return {
             difficulty: '',
          }
     },
 }
+
 </script>
 
 <style scoped>
@@ -43,8 +44,13 @@ export default {
     align-items: center;
     justify-content: space-around;
 }
-.radioButton{
-    text-align: left;
+.radioLabel{
+    display:block;
+    cursor:pointer;
+}
+
+input:checked {
+    border-bottom: 1px solid purple;
 }
 h3{
     font-size: 1.3rem;

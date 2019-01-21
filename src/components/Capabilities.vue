@@ -2,7 +2,7 @@
     <div id="capabilities" class="contentBox" slot="content">
         <p>
             <b>AT THIS VERY MOMENT</b>, with what degree of difficulty can you do the following:
-            <CapabilityQuestion v-for="(question, i) in questions" v-bind:questions="questions[i]"/>
+            <CapabilityQuestion v-for="(question, i) in questions" v-bind:questions="questions[i].name" v-bind:index="questions[i].index"/>
         </p>
     </div>
 </template>
@@ -20,19 +20,19 @@ export default {
     data: function() {
          return {
              questions: [
-                    "Dress yourself, including tying shoelaces and doing buttons",
-                    "Get in and out of bed",
-                    "Lift a full cup or glass to your mouth",
-                    "Walk outdoors on flat ground",
-                    "Wash and dry your entire body",
-                    "Bend down and pick up clothing from the floor",
-                    "Turn faucets on and off",
-                    "Get in and out of a car, bus, train, or airplane",
-                    "Walk two miles",
-                    "Participate in sports and games as you would like",
-                    "Get a good night’s sleep",
-                    "Deal with feelings of anxiety or being nervous",
-                    "Deal with feelings of depression or feeling blue",
+                    {name: "Dress yourself, including tying shoelaces and doing buttons", index: "a"},
+                    {name: "Get in and out of bed", index: "b"},
+                    {name: "Lift a full cup or glass to your mouth", index: "c"},
+                    {name: "Walk outdoors on flat ground", index: "d"},
+                    {name: "Wash and dry your entire body", index: "e"},
+                    {name: "Bend down and pick up clothing from the floor", index: "f"},
+                    {name: "Turn faucets on and off", index: "g"},
+                    {name: "Get in and out of a car, bus, train, or airplane", index: "h"},
+                    {name: "Walk two miles", index: "i"},
+                    {name: "Participate in sports and games as you would like", index: "j"},
+                    {name: "Get a good night’s sleep", index: "k"},
+                    {name: "Deal with feelings of anxiety or being nervous", index: "l"},
+                    {name: "Deal with feelings of depression or feeling blue", index: "m"},
              ]
          }
     },

@@ -19,7 +19,7 @@ h4 { font-size: 1.2em; }
 
 #app{
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 10fr 1fr;
     grid-template-rows: auto;
     grid-gap: 10px;
     min-height: 100vh;
