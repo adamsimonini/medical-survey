@@ -1,10 +1,10 @@
 <template>
     <div id="menu">
         <MenuItem v-for="(item, i) in menuList">
-            <div slot="innards"> 
+            <a v-bind:href="`${menuList[i].link}`" slot="innards"> 
                 <i v-bind:class="`fas fa-${menuList[i].icon}`"></i>
                 <p class="menuTitle">{{menuList[i].title}}</p>
-            </div>
+            </a>
         </MenuItem>
         <!-- <i class="fas fa-walking"></i>
         <i class="fas fa-fire"></i>
@@ -22,13 +22,13 @@ export default {
             return {
                 menuList:
                     [
-                        {icon: 'home', title: 'Home', show: true},
-                        {icon: 'walking', title: 'Capability'},
-                        {icon: 'fire', title: 'Pain'},
-                        {icon: 'bone', title: 'Stiffness'},
-                        {icon: 'bed', title: 'Fatigue'},
-                        {icon: 'history', title: 'Comparison'},
-                        {icon: 'smile', title: 'Wellbeing'},
+                        {icon: 'home', title: 'Home', link: '/'},
+                        {icon: 'walking', title: 'Capability', link: '/capabilities'},
+                        {icon: 'fire', title: 'Pain', link: '/pain'},
+                        {icon: 'bone', title: 'Stiffness', link: '/stiffness'},
+                        {icon: 'bed', title: 'Fatigue', link: '/fatigue'},
+                        {icon: 'history', title: 'Comparison', link: '/comparison'},
+                        {icon: 'smile', title: 'Wellbeing', link: '/wellbeing'},
                     ],
             }
     },
@@ -48,6 +48,15 @@ export default {
     align-items: center; 
     border-right: 1px solid var(--primaryColor);
 }
+
+#menu a{
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+#menu a:hover{
+    color: white;
+    text-decoration: none;
+}
 .fas{
     color: var(--primaryColor);
     font-size: 2.5rem;
@@ -61,7 +70,13 @@ export default {
     color: white !important;
     cursor: pointer;
 }
+.menuItem *:hover{
+    color: white !important;
+}
+.menuItem:hover .fas, .menuItem:hover .menuTitle {
+    color: white !important;
+}
 .menuTitle{
-    font-size: calc(10px + 1vw);
+    font-size: calc(10px + 0.5vw);
 }
 </style>

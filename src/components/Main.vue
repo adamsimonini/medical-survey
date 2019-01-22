@@ -3,30 +3,7 @@
     <SideMenu />
     <div>
       <h1>RheumInfo Patient Wellbeing Form</h1>
-      <SurveyQuestion class="" title="Home">
-        <Home slot="content"/>
-      </SurveyQuestion>
-      <SurveyQuestion class="" title="Current Capabilities">
-        <Capabilities slot="content"/>
-      </SurveyQuestion>
-      <!-- <SurveyQuestion class="SurveyQuestion" title="Event Propagation">
-      
-      </SurveyQuestion>
-      <SurveyQuestion class="SurveyQuestion" title="Key & Mouse Modifiers">
-      
-      </SurveyQuestion> -->
-      <SurveyQuestion class="" title="Pain in the Past Week">
-        <Pain slot="content"/>
-      </SurveyQuestion>
-      <SurveyQuestion class="" title="Morning Stiffness">
-        <Stiffness slot='content' />
-      </SurveyQuestion>
-      <SurveyQuestion class="" title="Fatigue">
-        <Fatigue slot="content"/>
-      </SurveyQuestion>
-      <SurveyQuestion class="" title="Mood Comparison">
-        <Mood slot="content"/>
-      </SurveyQuestion>
+      <router-view></router-view>
       <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     </div>
   </main>
@@ -34,25 +11,27 @@
 
 <script>
 import SideMenu from './SideMenu.vue';
-import SurveyQuestion from './SurveyQuestion.vue';
-import Home from './Home.vue';
-import Capabilities from './Capabilities.vue';
-import Pain from './Pain.vue';
-import Fatigue from './Fatigue.vue';
-import Mood from './Mood.vue';
-import Stiffness from './Stiffness.vue';
+// import SurveyQuestion from './SurveyQuestion.vue';
+// import Home from './Home.vue';
+// import Capabilities from './Capabilities.vue';
+// import Pain from './Pain.vue';
+// import Fatigue from './Fatigue.vue';
+// import Mood from './Mood.vue';
+// import Stiffness from './Stiffness.vue';
+// import CapabilityQuestion from './CapabilityQuestion.vue';
+// import Wellbeing from './Wellbeing.vue';
 
 export default {
   name: 'Main',
   components: {
     SideMenu,
-    SurveyQuestion,
-    Home,
-    Capabilities,
-    Pain,
-    Fatigue,
-    Mood,
-    Stiffness,
+    // SurveyQuestion,
+    // Home,
+    // Capabilities,
+    // Pain,
+    // Fatigue,
+    // Mood,
+    // Stiffness,
   },  
   data: function(){
     return {
