@@ -1,10 +1,10 @@
 <template>
     <div id="menu">
         <MenuItem v-for="(item, i) in menuList">
-            <a v-bind:href="`${menuList[i].link}`" slot="innards"> 
+            <router-link v-bind:to="`${menuList[i].link}`" slot="innards"> 
                 <i v-bind:class="`fas fa-${menuList[i].icon}`"></i>
                 <p class="menuTitle">{{menuList[i].title}}</p>
-            </a>
+            </router-link>
         </MenuItem>
         <!-- <i class="fas fa-walking"></i>
         <i class="fas fa-fire"></i>
@@ -78,5 +78,11 @@ export default {
 }
 .menuTitle{
     font-size: calc(10px + 0.5vw);
+}
+.router-link-active p {
+     font-size: calc(16px + 0.5vw) !important;
+}
+.router-link-active i {
+     font-size: calc(40px + 0.5vw) !important;
 }
 </style>

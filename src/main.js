@@ -12,14 +12,38 @@ import Mood from './components/Mood.vue';
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/capabilities', component: Capabilities },
-  { path: '/Stiffness', component: Stiffness },
-  { path: '/pain', component: Pain },
-  { path: '/Fatigue', component: Fatigue },
-  { path: '/pain', component: Pain },
-  { path: '/Comparison', component: Comparison },
-  { path: '/Mood', component: Mood },
+  { 
+    path: '/', 
+    component: Home 
+  },
+  { 
+    path: '/capabilities', 
+    component: Capabilities 
+  },
+  { 
+    path: '/Stiffness', 
+    component: Stiffness 
+  },
+  { 
+    path: '/pain', 
+    component: Pain 
+  },
+  { 
+    path: '/Fatigue',
+    component: Fatigue 
+  },
+  { 
+    path: '/pain', 
+    component: Pain 
+  },
+  { 
+    path: '/Comparison', 
+    component: Comparison 
+  },
+  { 
+    path: '/Mood', 
+    component: Mood 
+  },
 ];
 
 const router = new VueRouter({
