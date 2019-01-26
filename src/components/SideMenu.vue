@@ -28,7 +28,7 @@ export default {
                         {icon: 'bone', title: 'Stiffness', link: '/stiffness'},
                         {icon: 'bed', title: 'Fatigue', link: '/fatigue'},
                         {icon: 'history', title: 'Comparison', link: '/comparison'},
-                        {icon: 'smile', title: 'Wellbeing', link: '/wellbeing'},
+                        {icon: 'smile', title: 'Mood', link: '/mood'},
                     ],
             }
     },

@@ -21,27 +21,23 @@ const routes = [
     component: Capabilities 
   },
   { 
-    path: '/Stiffness', 
+    path: '/pain', 
+    component: Pain 
+  },
+  { 
+    path: '/stiffness', 
     component: Stiffness 
   },
   { 
-    path: '/pain', 
-    component: Pain 
-  },
-  { 
-    path: '/Fatigue',
+    path: '/fatigue',
     component: Fatigue 
   },
   { 
-    path: '/pain', 
-    component: Pain 
-  },
-  { 
-    path: '/Comparison', 
+    path: '/comparison', 
     component: Comparison 
   },
   { 
-    path: '/Mood', 
+    path: '/mood', 
     component: Mood 
   },
 ];
