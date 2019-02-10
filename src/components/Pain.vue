@@ -3,20 +3,19 @@
         <p>
             How much <b>PAIN</b> have you had because of your illness in the <b>PAST WEEK</b>? Place a mark
             on the line below to indicate how severe your pain has been:
-            *insert slider*
         </p>
+        <ToTenRating />
     </div>
 </template>
 
 <script>
-
-// import CapabilityQuestion from './CapabilityQuestion.vue';
+import ToTenRating from './ToTenRating.vue';
 
 export default {
     name: 'Pain',
     props: [''],
     components: {
-
+        ToTenRating
     },  
     data: function() {
          return {

@@ -1,22 +1,21 @@
 <template>
     <div id="fatigue" class="contentBox" slot="content">
         <p>
-            How much of a problem has UNUSUAL fatigue or tiredness been for you OVER THE PAST
-            WEEK? Place a mark on the line below
-            *insert slider*
+            How much of a problem has <b>UNUSUAL</b> fatigue or tiredness been for you <b>OVER THE PAST
+            WEEK?</b> Place a mark on the line below
         </p>
+        <ToTenRating />
     </div>
 </template>
 
 <script>
-
-// import CapabilityQuestion from './CapabilityQuestion.vue';
+import ToTenRating from './ToTenRating.vue';
 
 export default {
     name: 'Fatigue',
     props: [''],
     components: {
-
+        ToTenRating
     },  
     data: function() {
          return {

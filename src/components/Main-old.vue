@@ -12,12 +12,6 @@
       <SurveyQuestion class="" title="Current Capabilities">
         <Capabilities slot="content"/>
       </SurveyQuestion>
-      <!-- <SurveyQuestion class="SurveyQuestion" title="Event Propagation">
-      
-      </SurveyQuestion>
-      <SurveyQuestion class="SurveyQuestion" title="Key & Mouse Modifiers">
-      
-      </SurveyQuestion> -->
       <SurveyQuestion class="" title="Pain in the Past Week">
         <Pain slot="content"/>
       </SurveyQuestion>

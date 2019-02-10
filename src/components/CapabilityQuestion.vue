@@ -41,6 +41,7 @@ export default {
 <style scoped>
 .capability-question{
     width: 100%;
+    max-height: 70px;
 }
 .answersBox{
     display: flex;
