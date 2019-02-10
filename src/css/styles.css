@@ -54,46 +54,9 @@ h4 { font-size: 1.2em; }
 .guideSection h2{
     border-bottom: 1px solid grey;  
 }
-button{
-    text-align: center;
-    border: 2px solid var(--primaryColor);
-    color: var(--primaryColor);
-    background-color: white;
-    padding: 20px;;
-    border-radius: 10px;
-}
-button:hover{
-    cursor: pointer;
-    border: 2px solid var(--secondaryColor);
-    color: var(--secondaryColor);
-}
-button:focus{
-    background-color: white !important;
-    color: black !important;
-    border: 2px solid skyblue;
-    outline:0;
-}
-button:nth-child(odd){
-
-}
-.doubleBlue{
-    color: blue;
-    border: 1px solid blue;
-}
-.pinkBox{
-    width: 200px;
-    height: 200px;
-    background: pink;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.width-box{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+.v-pagination__item, .v-pagination__navigation{
+    height: 4rem !important;
+    width: 4vw !important;
 }
 .pain-areas input{
     color: red;

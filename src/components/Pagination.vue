@@ -1,7 +1,14 @@
 <template>
     <div id="pagination" class="contentBox">
-        <button id="back">Back</button>
-        <button id="next" @click="paginate()">NEXT</button>
+        <div class="text-xs-center">
+            <v-pagination
+            v-model="page"
+            next-icon=">"
+            prev-icon="<"
+            :length="8"
+            color="#988ABF"
+            ></v-pagination>
+        </div>
     </div>
 </template>
 
@@ -18,6 +25,7 @@ export default {
             routes: null,
             currentPath: this.$router.history.current.path,
             nextPath: this.paginate(),
+            page: 1,
         }
     },
     watcher: {
@@ -47,13 +55,4 @@ export default {
 </script>
 
 <style scoped>
-#pagination{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-#next{
-    padding: 20px 40px;
-}
 </style>

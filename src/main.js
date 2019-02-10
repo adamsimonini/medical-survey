@@ -9,6 +9,10 @@ import Stiffness from './components/Stiffness.vue';
 import Fatigue from './components/Fatigue.vue';
 import Comparison from './components/Comparison.vue';
 import Mood from './components/Mood.vue';
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css';
+
+Vue.use(Vuetify);
 
 Vue.use(VueRouter);
 

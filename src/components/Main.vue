@@ -32,10 +32,9 @@ export default {
   display: grid;
   grid-template-areas:
     'menu main main main'
-    'menu main main main'
     'menu footer footer footer';
   grid-template-columns: 15% 1fr;
-  grid-template-rows: 4fr 1fr;
+  grid-template-rows: 6fr 1fr;
   grid-gap: 10px;
   border: 2px solid var(--primaryColor);
   border-radius: 10px;
