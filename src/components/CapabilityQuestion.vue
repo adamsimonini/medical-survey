@@ -53,6 +53,7 @@ input:checked {
     border-bottom: 1px solid purple;
 }
 h3{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    margin: 2vh 0 0 0;
 }
 </style>

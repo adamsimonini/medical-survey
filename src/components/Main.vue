@@ -13,28 +13,12 @@
 <script>
 import SideMenu from './SideMenu.vue';
 import Pagination from './Pagination.vue';
-// import SurveyQuestion from './SurveyQuestion.vue';
-// import Home from './Home.vue';
-// import Capabilities from './Capabilities.vue';
-// import Pain from './Pain.vue';
-// import Fatigue from './Fatigue.vue';
-// import Mood from './Mood.vue';
-// import Stiffness from './Stiffness.vue';
-// import CapabilityQuestion from './CapabilityQuestion.vue';
-// import Wellbeing from './Wellbeing.vue';
 
 export default {
   name: 'Main',
   components: {
     SideMenu,
     Pagination,
-    // SurveyQuestion,
-    // Home,
-    // Capabilities,
-    // Pain,
-    // Fatigue,
-    // Mood,
-    // Stiffness,
   },  
   data: function(){
     return {

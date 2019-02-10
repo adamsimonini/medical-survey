@@ -2,7 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router';
 import Home from './components/Home.vue';
-import Capabilities from './components/Capabilities.vue';
+import CapabilitiesOne from './components/Capabilities1.vue';
+import CapabilitiesTwo from './components/Capabilities2.vue';
 import Pain from './components/Pain.vue';
 import Stiffness from './components/Stiffness.vue';
 import Fatigue from './components/Fatigue.vue';
@@ -18,7 +19,11 @@ const routes = [
   },
   { 
     path: '/capabilities', 
-    component: Capabilities 
+    component: CapabilitiesOne
+  },
+  { 
+    path: '/capabilities', 
+    component: CapabilitiesTwo
   },
   { 
     path: '/pain', 

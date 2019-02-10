@@ -20,13 +20,6 @@ export default {
     data: function() {
          return {
              questions: [
-                    {name: "Dress yourself, including tying shoelaces and doing buttons", index: "a"},
-                    {name: "Get in and out of bed", index: "b"},
-                    {name: "Lift a full cup or glass to your mouth", index: "c"},
-                    {name: "Walk outdoors on flat ground", index: "d"},
-                    {name: "Wash and dry your entire body", index: "e"},
-                    {name: "Bend down and pick up clothing from the floor", index: "f"},
-                    {name: "Turn faucets on and off", index: "g"},
                     {name: "Get in and out of a car, bus, train, or airplane", index: "h"},
                     {name: "Walk two miles", index: "i"},
                     {name: "Participate in sports and games as you would like", index: "j"},
