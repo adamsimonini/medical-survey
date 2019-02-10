@@ -1,8 +1,8 @@
 <template>
   <main id='main'>
     <SideMenu class='menu'/>
+    <h1 class="header">RheumInfo Patient Wellbeing Form</h1>
     <div class='main-content'>
-      <h1>RheumInfo Patient Wellbeing Form</h1>
       <router-view></router-view>
       <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     </div>
@@ -31,10 +31,11 @@ export default {
 #main{
   display: grid;
   grid-template-areas:
-    'menu main main main'
-    'menu footer footer footer';
+    'menu header '
+    'menu main'
+    'menu footer';
   grid-template-columns: 15% 1fr;
-  grid-template-rows: 6fr 1fr;
+  grid-template-rows: 1fr 7fr 1fr;
   grid-gap: 10px;
   border: 2px solid var(--primaryColor);
   border-radius: 10px;

@@ -39,6 +39,9 @@ export default {
 </script>
 
 <style scoped>
+.capability-question{
+    width: 100%;
+}
 .answersBox{
     display: flex;
     align-items: center;

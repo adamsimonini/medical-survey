@@ -1,9 +1,7 @@
 <template>
     <div id="capabilities" class="contentBox" slot="content">
-        <p>
-            <b>AT THIS VERY MOMENT</b>, with what degree of difficulty can you do the following:
-            <CapabilityQuestion v-for="(question, i) in questions" v-bind:questions="questions[i].name" v-bind:index="questions[i].index"/>
-        </p>
+        <span><b>AT THIS VERY MOMENT</b>, with what degree of difficulty can you do the following:</span>
+        <CapabilityQuestion v-for="(question, i) in questions" v-bind:questions="questions[i].name" v-bind:index="questions[i].index"/>
     </div>
 </template>
 
